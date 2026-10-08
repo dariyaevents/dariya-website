@@ -1,0 +1,137 @@
+# Dariya Dashboard — Decap CMS
+# Every save commits to GitHub; Netlify rebuilds the live site in about a minute.
+
+backend:
+  name: github
+  repo: dariyaevents/dariya-website
+  branch: main
+  commit_messages:
+    update: "Dashboard: update {{collection}} “{{slug}}”"
+    uploadMedia: "Dashboard: upload {{path}}"
+
+# Lets you run the dashboard on your own computer with `npx decap-server`
+local_backend: true
+
+site_url: https://dariyaevents.com
+display_url: https://dariyaevents.com
+logo_url: ""
+
+media_folder: images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: site
+    label: Website
+    editor:
+      preview: false
+    files:
+
+      # ---------------- PHOTOS ----------------
+      - name: gallery
+        label: "📷 Photo gallery"
+        file: content/gallery.json
+        fields:
+          - label: Photos
+            name: items
+            widget: list
+            label_singular: photo
+            summary: "{{fields.caption}} — {{fields.brand}}"
+            hint: "Drag to reorder. The first photos appear first on the site."
+            fields:
+              - {label: Photo, name: image, widget: image, required: false, hint: "JPG or WebP, ideally under 600 KB and about 2000px on the long side."}
+              - label: House
+                name: brand
+                widget: select
+                options:
+                  - {label: "Dariya Events", value: events}
+                  - {label: "Dariya Gourmet", value: gourmet}
+                  - {label: "Qafila", value: qafila}
+                  - {label: "Raviya Productions", value: raviya}
+                  - {label: "Khanabadosh", value: khanabadosh}
+              - {label: Caption, name: caption, widget: string}
+              - label: Shape on the grid
+                name: layout
+                widget: select
+                default: normal
+                options:
+                  - {label: "Normal", value: normal}
+                  - {label: "Tall (portrait)", value: tall}
+                  - {label: "Wide (landscape)", value: wide}
+
+      # ---------------- FILMS ----------------
+      - name: films
+        label: "🎬 Films (YouTube)"
+        file: content/films.json
+        fields:
+          - label: Films
+            name: items
+            widget: list
+            label_singular: film
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: YouTube link, name: youtube, widget: string, required: false, hint: "Paste any YouTube link: youtube.com/watch?v=…, youtu.be/…, or a Shorts link."}
+              - label: House
+                name: brand
+                widget: select
+                options:
+                  - {label: "Dariya Events", value: events}
+                  - {label: "Dariya Gourmet", value: gourmet}
+                  - {label: "Qafila", value: qafila}
+                  - {label: "Raviya Productions", value: raviya}
+                  - {label: "Khanabadosh", value: khanabadosh}
+
+      # ---------------- HOUSES ----------------
+      - name: brands
+        label: "🏛 The five houses"
+        file: content/brands.json
+        fields:
+          - label: Houses
+            name: items
+            widget: list
+            allow_add: false
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "ID (do not change)", name: id, widget: string}
+              - {label: Name, name: name, widget: string}
+              - {label: "Small label (e.g. The mother company)", name: role, widget: string}
+              - {label: Tagline, name: tagline, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Accent colour, name: color, widget: color}
+              - {label: Services, name: services, widget: list, field: {label: Service, name: service, widget: string}}
+              - {label: Cover photo, name: cover, widget: image, required: false}
+              - {label: "FSSAI licence no. (Gourmet only)", name: licence, widget: string, required: false}
+
+      # ---------------- GENERAL ----------------
+      - name: general
+        label: "⚙️ Text, contact, FAQ & testimonials"
+        file: content/general.json
+        fields:
+          - {label: Hero small line, name: hero_kicker, widget: string}
+          - {label: Hero headline, name: hero_line, widget: string}
+          - {label: Hero paragraph, name: hero_sub, widget: text}
+          - {label: About paragraph, name: manifesto, widget: text}
+          - {label: "Scrolling client line (separate with ·)", name: clients_line, widget: string}
+          - {label: Phone, name: phone, widget: string, required: false}
+          - {label: "WhatsApp number (with country code, e.g. 919876543210)", name: whatsapp, widget: string, required: false}
+          - {label: Email, name: email, widget: string, required: false}
+          - {label: Address, name: address, widget: string, required: false}
+          - {label: Instagram URL, name: instagram, widget: string, required: false}
+          - {label: YouTube channel URL, name: youtube_channel, widget: string, required: false}
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            required: false
+            summary: "{{fields.name}}"
+            hint: "Only add real words from real clients, with their permission. The section stays hidden until you add one."
+            fields:
+              - {label: Quote, name: quote, widget: text}
+              - {label: Name, name: name, widget: string}
+              - {label: "Event (optional)", name: event, widget: string, required: false}
+          - label: FAQ
+            name: faq
+            widget: list
+            summary: "{{fields.q}}"
+            fields:
+              - {label: Question, name: q, widget: string}
+              - {label: Answer, name: a, widget: text}

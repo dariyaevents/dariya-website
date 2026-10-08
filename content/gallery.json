@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "image": "",
+      "brand": "events",
+      "caption": "Haldi morning, North Kolkata",
+      "layout": "tall"
+    },
+    {
+      "image": "",
+      "brand": "events",
+      "caption": "Sindoor daan",
+      "layout": "normal"
+    },
+    {
+      "image": "",
+      "brand": "gourmet",
+      "caption": "Live counter, reception night",
+      "layout": "normal"
+    },
+    {
+      "image": "",
+      "brand": "qafila",
+      "caption": "Conference stage, hotel ballroom",
+      "layout": "wide"
+    },
+    {
+      "image": "",
+      "brand": "raviya",
+      "caption": "Editorial, studio",
+      "layout": "tall"
+    },
+    {
+      "image": "",
+      "brand": "khanabadosh",
+      "caption": "Street food trail",
+      "layout": "normal"
+    },
+    {
+      "image": "",
+      "brand": "events",
+      "caption": "Bidaai at dusk",
+      "layout": "wide"
+    },
+    {
+      "image": "",
+      "brand": "gourmet",
+      "caption": "Banana-leaf feast",
+      "layout": "normal"
+    },
+    {
+      "image": "",
+      "brand": "raviya",
+      "caption": "Campaign shoot",
+      "layout": "normal"
+    },
+    {
+      "image": "",
+      "brand": "khanabadosh",
+      "caption": "Hill road, golden hour",
+      "layout": "tall"
+    }
+  ]
+}
