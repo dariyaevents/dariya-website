@@ -1,59 +1,85 @@
 {
   "items": [
     {
-      "id": "events",
-      "name": "Dariya Events",
-      "role": "The mother company",
-      "tagline": "Wedding photography & films",
-      "description": "The house where it began. We photograph and film weddings the way families remember them, from the gaye holud morning to the last look back at bidaai. Candid frames, cinematic films and heirloom albums, since 2017.",
       "color": "#D9B66C",
-      "services": ["Wedding photography", "Cinematic wedding films", "Pre-wedding shoots", "Heirloom albums", "Event management"],
-      "cover": "",
-      "licence": ""
+      "name": "Dariya Events",
+      "tagline": "Wedding photography & films",
+      "licence": "",
+      "role": "The mother company",
+      "cover": "/images/uploads/dd-11.png",
+      "id": "events",
+      "description": "The house where it began. We photograph and film weddings the way families remember them, from the gaye holud morning to the last look back at bidaai. Candid frames, cinematic films and heirloom albums, since 2017.",
+      "services": [
+        "Wedding photography",
+        "Cinematic wedding films",
+        "Pre-wedding shoots",
+        "Heirloom albums",
+        "Event management"
+      ]
     },
     {
-      "id": "gourmet",
-      "name": "Dariya Gourmet",
-      "role": "Food & beverage",
-      "tagline": "FSSAI-approved catering",
-      "description": "Our FSSAI-approved kitchen. Wedding feasts, live counters and corporate menus, cooked with the same care we bring to the camera and served on banana leaf or fine china, as the occasion asks.",
       "color": "#7CC47A",
-      "services": ["Wedding catering", "Live counters", "Corporate catering", "Menu curation & tastings"],
+      "name": "Dariya Gourmet",
+      "tagline": "FSSAI-approved catering",
+      "licence": "",
+      "role": "Food & beverage",
       "cover": "",
-      "licence": ""
+      "id": "gourmet",
+      "description": "Our FSSAI-approved kitchen. Wedding feasts, live counters and corporate menus, cooked with the same care we bring to the camera and served on banana leaf or fine china, as the occasion asks.",
+      "services": [
+        "Wedding catering",
+        "Live counters",
+        "Corporate catering",
+        "Menu curation & tastings"
+      ]
     },
     {
-      "id": "qafila",
-      "name": "Qafila",
-      "role": "Corporate",
-      "tagline": "AV, social media & events",
-      "description": "Qafila means caravan, and that is how we arrive: AV, stage, cameras and a social team moving together. Conferences, launches and corporate events for hotels, resorts and brands, plus the photography, films and social media that keep them visible after the lights go down.",
       "color": "#6F8CFF",
-      "services": ["Full-service AV & stage", "Corporate photography & films", "Social media management", "Corporate events & launches"],
+      "name": "Qafila",
+      "tagline": "AV, social media & events",
+      "licence": "",
+      "role": "Corporate",
       "cover": "",
-      "licence": ""
+      "id": "qafila",
+      "description": "Qafila means caravan, and that is how we arrive: AV, stage, cameras and a social team moving together. Conferences, launches and corporate events for hotels, resorts and brands, plus the photography, films and social media that keep them visible after the lights go down.",
+      "services": [
+        "Full-service AV & stage",
+        "Corporate photography & films",
+        "Social media management",
+        "Corporate events & launches"
+      ]
     },
     {
-      "id": "raviya",
-      "name": "Raviya Productions",
-      "role": "Fashion & glam",
-      "tagline": "Connecting stars & businesses",
-      "description": "High-end fashion and glam influencing. We produce editorials and campaigns, and we connect the faces people follow with the businesses that want to be seen. Talent, styling, shoot and rollout under one roof.",
       "color": "#F2649A",
-      "services": ["Fashion & editorial shoots", "Influencer campaigns", "Celebrity collaborations", "Brand launches"],
+      "name": "Raviya Productions",
+      "tagline": "Connecting stars & businesses",
+      "licence": "",
+      "role": "Fashion & glam",
       "cover": "",
-      "licence": ""
+      "id": "raviya",
+      "description": "High-end fashion and glam influencing. We produce editorials and campaigns, and we connect the faces people follow with the businesses that want to be seen. Talent, styling, shoot and rollout under one roof.",
+      "services": [
+        "Fashion & editorial shoots",
+        "Influencer campaigns",
+        "Celebrity collaborations",
+        "Brand launches"
+      ]
     },
     {
-      "id": "khanabadosh",
-      "name": "Khanabadosh",
-      "role": "Stories",
-      "tagline": "High-end food & travel stories",
-      "description": "Khanabadosh means nomad. Our food and travel channel goes looking for the plate worth crossing the city for and the road worth the drive, and tells those stories for restaurants, hotels and destinations too.",
       "color": "#E8925A",
-      "services": ["Food films & reels", "Travel stories", "Restaurant & hotel features", "Branded content"],
+      "name": "Khanabadosh",
+      "tagline": "High-end food & travel stories",
+      "licence": "",
+      "role": "Stories",
       "cover": "",
-      "licence": ""
+      "id": "khanabadosh",
+      "description": "Khanabadosh means nomad. Our food and travel channel goes looking for the plate worth crossing the city for and the road worth the drive, and tells those stories for restaurants, hotels and destinations too.",
+      "services": [
+        "Food films & reels",
+        "Travel stories",
+        "Restaurant & hotel features",
+        "Branded content"
+      ]
     }
   ]
 }
